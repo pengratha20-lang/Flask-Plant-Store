@@ -250,6 +250,21 @@
   .main-content {
     padding-top: 70px;
   }
+  
+  /* Mobile button sizing for shop pages */
+  .btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    min-height: 36px;
+  }
+  
+  .btn-lg {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    min-height: 40px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -262,8 +277,37 @@
   }
   
   .product-actions .btn {
-    width: 35px;
-    height: 35px;
+    width: 32px;
+    height: 32px;
+    font-size: 0.8rem;
+  }
+  
+  /* Smaller buttons on mobile for shop */
+  .btn {
+    padding: 6px 14px;
+    font-size: 0.8rem;
+    border-radius: 6px;
+    min-height: 34px;
+  }
+  
+  .btn-lg {
+    padding: 8px 18px;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    min-height: 38px;
+  }
+  
+  /* Filter and sort buttons */
+  .filter-pills .badge {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+  }
+  
+  /* Navigation buttons in mobile menu */
+  .navbar-nav .nav-link {
+    padding: 8px 16px !important;
+    font-size: 0.9rem !important;
+    margin: 2px 0;
   }
 }
 

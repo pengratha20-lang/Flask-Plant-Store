@@ -229,22 +229,22 @@
   
   /* Mobile navigation improvements */
   .shop-header .navbar-nav .nav-link {
-    padding: 12px 16px !important;
-    font-size: 1.1rem;
+    padding: 8px 16px !important;
+    font-size: 0.9rem;
   }
   
-  /* Mobile button improvements */
+  /* Mobile button improvements - smaller sizing */
   .btn {
-    padding: 12px 20px;
-    font-size: 1rem;
-    border-radius: 8px;
-    min-height: 44px;
+    padding: 8px 16px;
+    font-size: 0.85rem;
+    border-radius: 6px;
+    min-height: 36px;
   }
   
   .btn-lg {
-    padding: 16px 24px;
-    font-size: 1.1rem;
-    min-height: 50px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    min-height: 40px;
   }
   
   /* Footer text visibility on mobile */
@@ -272,29 +272,29 @@
   }
   
   .summary-item {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
   
   /* Improve mobile form elements */
   .form-control {
-    padding: 12px 16px;
-    font-size: 1rem;
-    border-radius: 8px;
-    min-height: 44px;
+    padding: 10px 14px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    min-height: 38px;
   }
   
   /* Better spacing for mobile */
   .container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
   
   .py-5 {
-    padding: 2rem 0 !important;
+    padding: 1.5rem 0 !important;
   }
   
   .mb-4 {
-    margin-bottom: 2rem !important;
+    margin-bottom: 1.5rem !important;
   }
   
   /* Fix card spacing */
@@ -302,11 +302,25 @@
     margin-bottom: 1rem;
   }
   
-  /* Improve checkout button */
+  /* Improve checkout button - smaller but still prominent */
   #checkout-btn {
-    padding: 18px 24px;
-    font-size: 1.1rem;
-    border-radius: 10px;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    min-height: 44px;
+  }
+  
+  /* Smaller quantity controls */
+  .quantity-btn {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+  }
+  
+  .quantity-input {
+    width: 50px;
+    padding: 0.4rem;
+    font-size: 0.85rem;
   }
 }
 
