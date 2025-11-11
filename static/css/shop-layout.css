@@ -25,6 +25,57 @@
   color: var(--primary-color) !important;
 }
 
+/* Mobile burger menu improvements */
+@media (max-width: 768px) {
+  .navbar-toggler {
+    border: none;
+    padding: 4px 6px;
+    font-size: 0.9rem;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  
+  .navbar-toggler-icon {
+    width: 18px;
+    height: 18px;
+    background-size: 18px;
+  }
+  
+  .navbar-nav {
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 8px 16px !important;
+    margin: 2px auto;
+    text-align: center;
+    font-size: 0.95rem;
+    border-radius: 6px;
+    max-width: 200px;
+    display: block;
+  }
+  
+  .navbar-brand {
+    font-size: 1.3rem !important;
+  }
+  
+  .navbar-collapse {
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.98);
+    margin-top: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
 /* Main content layout */
 .main-content {
   min-height: 100vh;
