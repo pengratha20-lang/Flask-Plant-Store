@@ -414,6 +414,16 @@ body {
     margin: 0 auto;
 }
 
+.newsletter-privacy-text {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.newsletter-privacy-text small {
+    display: block !important;
+    text-align: center !important;
+}
+
 /* Footer Newsletter consistency */
 .footer .newsletter-form .form-control {
     border-radius: 8px 0 0 8px;
@@ -447,6 +457,14 @@ body {
     .newsletter-input-group {
         max-width: 320px;
     }
+    
+    .newsletter-privacy-text {
+        text-align: center;
+        margin-top: 10px;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (max-width: 576px) {
@@ -478,6 +496,18 @@ body {
         min-height: 44px;
         max-width: 200px;
         margin: 0 auto;
+    }
+    
+    .newsletter-privacy-text {
+        text-align: center;
+        margin-top: 12px;
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .newsletter-privacy-text small {
+        font-size: 0.85rem;
     }
 }
 
