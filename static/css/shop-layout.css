@@ -409,3 +409,29 @@
   transform: translateY(-1px);
   box-shadow: 0 4px 8px rgba(40, 167, 69, 0.2);
 }
+
+/* Footer text color fix for shop pages */
+.footer {
+  background: #1a1a1a !important;
+}
+
+.footer, 
+.footer a, 
+.footer .text-muted, 
+.footer .footer-subtitle, 
+.footer .copyright,
+.footer .footer-title,
+.footer .footer-section h3,
+.footer .footer-section h4 {
+  color: #e9ecef !important;
+}
+
+.footer .text-muted,
+.footer .footer-links a {
+  color: #cfcfcf !important;
+}
+
+.footer .text-muted:hover,
+.footer .footer-links a:hover {
+  color: var(--primary-color) !important;
+}

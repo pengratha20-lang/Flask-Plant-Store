@@ -111,6 +111,30 @@ body {
     transform: scale(1.1);
 }
 
+/* Mobile navbar improvements */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        border: none;
+        padding: 8px 12px;
+        font-size: 1.2rem;
+    }
+    
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    
+    .navbar-nav .nav-link {
+        padding: 12px 16px !important;
+        margin: 4px 0;
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5rem !important;
+    }
+}
+
 /* ============ Hero Carousel ============ */
 .hero-carousel {
     margin-top: 76px; /* Account for fixed navbar */
@@ -303,13 +327,62 @@ body {
 .newsletter-form .form-control {
     border-radius: 25px 0 0 25px;
     border: none;
-    padding: 12px 20px;
+    padding: 16px 24px;
+    font-size: 1rem;
+    min-height: 50px;
 }
 
 .newsletter-form .btn {
     border-radius: 0 25px 25px 0;
-    padding: 12px 20px;
+    padding: 16px 24px;
     border: none;
+    min-height: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.newsletter-form .input-group {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Mobile Newsletter Improvements */
+@media (max-width: 768px) {
+    .newsletter-form .form-control {
+        padding: 14px 20px;
+        font-size: 1rem;
+        min-height: 48px;
+    }
+    
+    .newsletter-form .btn {
+        padding: 14px 20px;
+        min-height: 48px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .newsletter-form .input-group {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .newsletter-form .form-control {
+        border-radius: 25px;
+        margin-bottom: 0;
+        padding: 16px 24px;
+        font-size: 1.1rem;
+        min-height: 52px;
+        text-align: center;
+    }
+    
+    .newsletter-form .btn {
+        border-radius: 25px;
+        width: 100%;
+        padding: 16px 24px;
+        font-size: 1.1rem;
+        min-height: 52px;
+    }
 }
 
 /* ============ About Section Enhancements ============ */
@@ -792,6 +865,7 @@ body {
     .hero-slide {
         height: 60vh;
         min-height: 350px;
+        padding: 0 10px;
     }
     
     .hero-content {
@@ -817,6 +891,7 @@ body {
     
     .category-card {
         height: 180px;
+        margin-bottom: 1rem;
     }
     
     .product-image {
@@ -825,6 +900,7 @@ body {
     
     .promo-banner {
         text-align: center;
+        padding: 2rem 1rem;
     }
     
     .promo-banner .d-flex {
@@ -852,20 +928,6 @@ body {
         padding: 1.5rem 0;
     }
     
-    .newsletter-form .input-group {
-        flex-direction: column;
-    }
-    
-    .newsletter-form .form-control {
-        border-radius: 25px;
-        margin-bottom: 1rem;
-    }
-    
-    .newsletter-form .btn {
-        border-radius: 25px;
-        width: 100%;
-    }
-    
     .carousel-control-prev {
         left: 10px;
     }
@@ -877,6 +939,50 @@ body {
     .hero-badge .badge {
         font-size: 0.8rem !important;
         padding: 0.5rem 1rem !important;
+    }
+    
+    /* Fix button sizes on mobile */
+    .btn {
+        padding: 12px 20px;
+        font-size: 1rem;
+        border-radius: 8px;
+    }
+    
+    .btn-lg {
+        padding: 16px 24px;
+        font-size: 1.1rem;
+        border-radius: 10px;
+    }
+    
+    /* Fix container padding on mobile */
+    .container, .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    /* Fix section padding */
+    .py-5 {
+        padding: 3rem 0 !important;
+    }
+    
+    /* Fix text sizes */
+    .display-4 {
+        font-size: 1.8rem !important;
+    }
+    
+    .lead {
+        font-size: 1rem !important;
+    }
+    
+    /* Fix card spacing */
+    .card {
+        margin-bottom: 1rem;
+    }
+    
+    /* Fix image overflow */
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
