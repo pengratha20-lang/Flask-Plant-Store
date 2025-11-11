@@ -1,30 +1,56 @@
-import requestsimport requests
+import requestsimport requestsimport requests
+
+
 
 import osimport os
 
+def send_telegram_alert(message):
+
+    try:
+
+        bot_token = "7980568529:AAE8nIaaMhPStyv6aV-rFU4KTVs9P9Jn8k0"
+
+        chat_id = "1081886446"
 
 
 
+        url = f"https://api.telegram.org/bot{bot_token}/sendMessage"def send_telegram_alert(message):def send_telegram_alert(message):
 
-def send_telegram_alert(message):def send_telegram_alert(message):
+        payload = {
 
-    try:    try:
+            'chat_id': chat_id,    try:    try:
 
-        # Use environment variables only - no hardcoded tokens        # Use environment variables only - no hardcoded tokens
+            'text': message,
+
+            'parse_mode': 'HTML'        # Use environment variables only - no hardcoded tokens        # Use environment variables only - no hardcoded tokens
+
+        }
 
         bot_token = os.environ.get('TELEGRAM_BOT_TOKEN')        bot_token = os.environ.get('TELEGRAM_BOT_TOKEN')
 
-        chat_id = os.environ.get('TELEGRAM_CHAT_ID')        chat_id = os.environ.get('TELEGRAM_CHAT_ID')
+        print(f"Sending to Telegram: {url}")
+
+        print(f"Message: {message}")        chat_id = os.environ.get('TELEGRAM_CHAT_ID')        chat_id = os.environ.get('TELEGRAM_CHAT_ID')
 
 
 
-        # Check if environment variables are set        # Check if environment variables are set
+        response = requests.post(url, data=payload)
 
-        if not bot_token or not chat_id:        if not bot_token or not chat_id:
+        print(f"Response status: {response.status_code}")
 
-            print("Telegram credentials not configured. Skipping notification.")            print("Telegram credentials not configured. Skipping notification.")
+        print(f"Response text: {response.text}")        # Check if environment variables are set        # Check if environment variables are set
 
-            return False            return False
+
+
+        return response.status_code == 200        if not bot_token or not chat_id:        if not bot_token or not chat_id:
+
+
+
+    except Exception as e:            print("Telegram credentials not configured. Skipping notification.")            print("Telegram credentials not configured. Skipping notification.")
+
+        print(f"Telegram error: {e}")
+
+        return False            return False            return False
 
 
 
