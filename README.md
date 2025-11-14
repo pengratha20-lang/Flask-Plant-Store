@@ -167,7 +167,7 @@ This application is configured for easy deployment on Render.com:
 5. **Deploy**: Click "Create Web Service"
 
 ### Live Demo
-- 🌐 **Live Site**: [https://green-bean-plant-store.onrender.com](https://green-bean-plant-store.onrender.com)
+- 🌐 **Live Site**: [https://greenbeanplantstore.onrender.com](https://greenbeanplantstore.onrender.com)
 - 📂 **GitHub Repository**: [https://github.com/pengratha20-lang/Flask-Plant-Store](https://github.com/pengratha20-lang/Flask-Plant-Store)
 
 ### Local Development
@@ -198,7 +198,7 @@ This project is open source and available under the [MIT License](LICENSE).
 - **Email**: pengratha20@gmail.com
 - **GitHub**: [@pengratha20-lang](https://github.com/pengratha20-lang)
 - **Project Link**: [https://github.com/pengratha20-lang/Flask-Plant-Store](https://github.com/pengratha20-lang/Flask-Plant-Store)
-- **Live Demo**: [https://green-bean-plant-store.onrender.com](https://green-bean-plant-store.onrender.com)
+- **Live Demo**: [https://greenbeanplantstore.onrender.com](https://greenbeanplantstore.onrender.com)
 
 ## 🙏 Acknowledgments
 
